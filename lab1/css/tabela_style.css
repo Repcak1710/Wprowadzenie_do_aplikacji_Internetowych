@@ -1,0 +1,12 @@
+table{
+    
+    display: inline;
+    border-collapse: collapse;
+    margin: 1em;
+}
+td{
+    padding: 30px;
+    border: solid 3px;
+    text-align: center;
+    
+}

@@ -1,0 +1,66 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.box {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(2, 100px);
+    gap: 10px;
+}
+
+.kwadrat1{
+    height: 100px;
+    width: 100px;
+    background-color: red;
+    margin: 5px;
+}
+
+.kwadrat2{
+    height: 100px;
+    width: 100px;
+    background-color: blue;
+    margin: 5px;
+}
+
+.kwadrat3{
+    height: 100px;
+    width: 100px;
+    background-color: orange;
+    margin: 5px;
+}
+
+.kwadrat4{
+    height: 100px;
+    width: 100px;
+    background-color: green;
+    margin: 5px;
+}
+
+.kwadrat5{
+    height: 100px;
+    width: 100px;
+    background-color: purple;
+    margin: 5px;
+}
+
+.kwadrat:nth-child(3) {
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}

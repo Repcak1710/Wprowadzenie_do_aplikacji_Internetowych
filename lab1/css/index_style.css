@@ -1,0 +1,36 @@
+.cw1{
+    color: blueviolet;
+}
+.cw1:visited{
+    color: rgb(54, 12, 93);
+}
+.cw1:hover{
+    color: rgb(170, 113, 222);
+}
+.cw1:active{
+    color: rgb(129, 0, 250);
+}
+.cw2{
+    color: rgb(226, 141, 43);
+}
+.cw2:visited{
+    color: rgb(94, 58, 18);
+}
+.cw2:hover{
+    color: rgb(215, 164, 105);
+}
+.cw2:active{
+    color: rgb(255, 136, 0);
+}
+.cw3{
+    color: rgb(43, 208, 226);
+}
+.cw3:visited{
+    color: rgb(21, 97, 105);
+}
+.cw3:hover{
+    color: rgb(104, 195, 205);
+}
+.cw3:active{
+    color: rgb(0, 229, 255);
+}

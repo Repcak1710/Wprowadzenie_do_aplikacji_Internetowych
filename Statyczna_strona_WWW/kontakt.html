@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="shortcut icon" href="images/logo1.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/kontakt_style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <img class="logo" src="images/logo1.png">
+        <a class="name" href="home.html">Titan Fitness Club</a>
+        <a class="menu" href="home.html">Home</a>
+        <a class="menu" href="kontakt.html">Kontakt</a>
+        <a class="menu" href="galeria.html">Galeria</a>
+    </nav>
+<section>
+<form id="contactForm" onsubmit="return validateForm()">
+    <label for="mail">Twoj e-mail:</label>
+    <input
+        id="mail"
+        name="mail"
+        type="text"
+        placeholder="Wpisz swój adres e-mail" required><br><br>
+
+    <label for="topic">Temat wiadomości:</label>
+    <select id="topic" name="topic" required>
+        <option value="zapyatnie">Zapytanie</option>
+        <option value="pomoc">Pomoc</option>
+        <option value="inne">Inne</option>
+    </select><br><br>
+
+    <label for="msg">Twoja Wiadomość:</label><br>
+    <textarea
+        id="msg"
+        name="msg"
+        rows="6"
+        placeholder="Wpisz wiadomość" required></textarea><br>
+    <input class="wyslij" value="Wyślij" type="submit">
+</form>
+</section>
+<footer>
+    <h2>Kacper Wdowiak</h2>
+</footer>
+
+<script src="js/walidacja.js"></script>
+<div id="notification" class="notification" style="display: none;"></div>
+</body>
+</html>

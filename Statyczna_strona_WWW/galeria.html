@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeria</title>
+    <link rel="shortcut icon" href="images/logo1.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/galeria_style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <img class="logo" src="images/logo1.png">
+        <a class="name" href="home.html">Titan Fitness Club</a>
+        <a class="menu" href="home.html">Home</a>
+        <a class="menu" href="kontakt.html">Kontakt</a>
+        <a class="menu" href="galeria.html">Galeria</a>
+    </nav>
+    <main>
+        <div class="gallery">
+            <img src="images/sil1.png">
+            <img src="images/sil2.png">
+            <img src="images/sil3.png">
+            <img src="images/sil16.png">
+            <img src="images/sil5.png">
+            <img src="images/sil6.png">
+            <img src="images/sil7.png">
+            <img src="images/sil14.png">
+            <img src="images/sil9.png">
+            <img src="images/sil10.png">
+            <img src="images/sil11.png">
+            <img src="images/sil12.png">
+            <img src="images/sil8.png">
+            <img src="images/sil14.png">
+            <img src="images/sil15.png">
+        </div>
+        <div class="vid">
+            <video controls src="images/video.mp4" alt="Filmik z siłowni"></video>
+        </div>
+
+    </main>
+
+    <div id="lightbox" class="lightbox">
+        <span class="close">&times;</span>
+        <img class="lightbox-img" src="" alt="Powiększone zdjęcie">
+        <a class="prev" onclick="changeImage(-1)">&#10094;</a>
+        <a class="next" onclick="changeImage(1)">&#10095;</a>
+    </div>
+
+    <footer>
+        <h2>Kacper Wdowiak</h2>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

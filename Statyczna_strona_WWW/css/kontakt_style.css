@@ -12,7 +12,6 @@ body{
     margin: 0;
     display: flex;
     flex-direction: column;
-    text-align: center;
     justify-content: space-between;
     justify-items: center;
     align-items: center;
@@ -69,21 +68,20 @@ section{
     background-color: #151517;
     width: 80vw;
     padding: 20px;
-    text-align: center;
-    justify-items: center;
 }
 
 form{
     display: flex;
     flex-direction: column;
     padding: 20px;
-    text-align: center;
-    justify-items: center;
     text-transform: none;
 }
 
 label{
+    margin: auto;
     color: #FED01B;
+    margin-top: 3px;
+    margin-bottom: 3px;
 }
 
 textarea, input, select{
@@ -91,6 +89,7 @@ textarea, input, select{
     background-color: #b2b2b6;
     border-radius: 20px;
     padding: 7px;
+    margin:auto;
 }
 
 textarea, input{

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gra Zombie</title>
+    <link rel="stylesheet" href="css/game-style.css">
+</head>
+<body>
+    <div id="game">
+        <div id="ui">
+            <div id="lives">
+                <img src="images/full_heart.png" alt="Serce" class="heart">
+                <img src="images/full_heart.png" alt="Serce" class="heart">
+                <img src="images/full_heart.png" alt="Serce" class="heart">
+            </div>
+            <div id="score">Wynik: 0</div>
+        </div>
+        <div id="popup" class="hidden">
+            <div id="game-over">Koniec gry!</div>
+            <button id="restart-button">Zagraj ponownie</button>
+        </div>
+    </div>
+    <audio id="sad-music" src="images/sad-music.mp3" loop></audio>
+    <script src="js/game.js"></script>
+</body>
+</html>

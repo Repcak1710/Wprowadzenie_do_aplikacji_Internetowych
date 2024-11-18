@@ -1,0 +1,115 @@
+body {
+    margin: 0;
+    overflow: hidden;
+    cursor: none;
+}
+
+#game {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background: url('../images/board-bg.jpg') no-repeat center center/cover;
+}
+
+#ui {
+    position: absolute;
+    top: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    z-index: 10;
+    box-sizing: border-box;
+}
+
+#lives {
+    display: flex;
+    gap: 5px;
+}
+
+#lives img {
+    width: 40px;
+    height: 40px;
+}
+
+#score {
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    text-shadow: 2px 2px 4px black;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 30%;
+}
+
+#popup {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    z-index: 20;
+}
+
+.hidden {
+    display: none;
+}
+
+#restart-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #ff4444;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#restart-button:hover {
+    background-color: #cc0000;
+}
+
+.zombie {
+    position: absolute;
+    width: 200px;
+    height: 312px;
+    background: url('../images/walkingdead.png') no-repeat;
+    background-size: 2000px 312px;
+    animation: zombieWalk 1s steps(10) infinite, moveLeft 5s linear forwards;
+    z-index: 5;
+    border: 1px solid transparent;
+}
+
+@keyframes zombieWalk {
+    from {
+        background-position: 0;
+    }
+    to {
+        background-position: -2000px;
+    }
+}
+
+@keyframes moveLeft {
+    from {
+        right: -200px;
+    }
+    to {
+        right: 100vw;
+    }
+}
+
+#aim {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    background: url('../images/aim.png') no-repeat center/contain;
+    pointer-events: none;
+    z-index: 15;
+}
